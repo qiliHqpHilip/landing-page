@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+/* General Styles */
+
 body,
 html {
   font-family: "Roboto", sans-serif;
@@ -17,6 +19,16 @@ html {
   width: 100%;
   max-width: 960px;
 }
+
+section {
+  width: 100%; /* Ensures the section takes full width */
+  display: flex;
+  justify-content: center; /* Centers the inner container */
+}
+
+/* Sections */
+
+/* Header */
 
 header {
   width: 100%;
@@ -44,11 +56,7 @@ a {
   text-decoration: none;
 }
 
-section {
-  width: 100%; /* Ensures the section takes full width */
-  display: flex;
-  justify-content: center; /* Centers the inner container */
-}
+/* Hero */
 
 .hero {
   display: flex;
@@ -56,6 +64,37 @@ section {
   width: 100%;
   background-color: #1f2937;
 }
+
+.hero-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.hero-main-text {
+  flex: 1;
+}
+
+.hero-secondary-text {
+  flex: 1;
+}
+
+.hero-right {
+  display: flex;
+  background-color: #e5e7eb;
+  width: 80%;
+  height: 80%;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.image {
+  background-color: #e5e7eb;
+}
+
+/* Info */
 
 .info {
   display: flex;
