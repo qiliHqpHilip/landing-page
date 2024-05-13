@@ -60,7 +60,7 @@ a {
 
 .hero {
   display: flex;
-  flex: 1 0 220px;
+  flex: 1 0 450px;
   width: 100%;
   background-color: #1f2937;
 }
@@ -73,17 +73,35 @@ a {
 
 .hero-main-text {
   flex: 1;
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: extra-bold;
+  /* justify-content: flex-start; */
 }
 
 .hero-secondary-text {
   flex: 1;
+  color: #e5e7eb;
+  font-size: 18px;
+  margin: 15px 15px 15px 0px;
+}
+
+.hero-button {
+  flex: 0 0 30px;
+  background-color: #3882f6;
+  border: 0px;
+  color: #e5e7eb;
+  font-size: 18px;
+  font-weight: bold;
+  width: 120px;
+  border-radius: 5px;
 }
 
 .hero-right {
   display: flex;
-  background-color: #e5e7eb;
+  background-color: #f9faf8;
   width: 80%;
-  height: 80%;
+  height: 50%;
   border-radius: 3px;
   justify-content: center;
   align-items: center;
@@ -91,24 +109,97 @@ a {
 }
 
 .image {
-  background-color: #e5e7eb;
+  background-color: #f9faf8;
 }
 
 /* Info */
 
 .info {
   display: flex;
-  flex: 1 0 220px;
+  flex: 1 0 450px;
   width: 100%;
 }
 
+.info-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-header {
+  color: #1f2937;
+  font-size: 48px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.info-content-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 0 px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-content-img {
+  width: 80%;
+  height: 0;
+  padding-bottom: 80%;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 4px;
+  border-color: #3882f6;
+}
+
+.info-content-subtext {
+  display: flex;
+  color: #505050;
+  width: 80%;
+  flex: 1;
+  text-align: center;
+}
+/* Quote */
 .quote {
   display: flex;
-  flex: 1 0 220px;
+  flex: 1 0 400px;
   width: 100%;
   background-color: #e5e7eb;
 }
+.quote-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
 
+.quote-text {
+  color: #1f2937;
+  width: 80%;
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  padding: 15px 0px;
+}
+
+.quote-author {
+  display: flex;
+  flex: 1;
+  width: 80%;
+  justify-content: flex-end;
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+/* Call to Action */
 .call-to-action {
   display: flex;
   flex: 1 0 220px;
